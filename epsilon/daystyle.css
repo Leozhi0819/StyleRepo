@@ -1,0 +1,42 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	font-style: normal;
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:121212
+}
+
+h1 {
+	font-size:2rem;
+	font-weight:900;
+}
+
+h2 {
+	font-size:1.8rem;
+	font-weight:800;
+}
+
+h3 {
+	font-size:1.6rem;
+	font-weight:700;
+}
+
+h4 {
+	font-size:1.4rem;
+	font-weight:700;
+}
+
+h5 {
+	font-size:1.2rem;
+	font-weight:700;
+}
+
+h6 {
+	font-size:1.2rem;
+	font-weight:700;
+	color:#5A5A5A;
+}
