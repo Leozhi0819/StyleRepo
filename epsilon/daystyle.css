@@ -175,7 +175,7 @@ table {
 	overflow: auto;
 	padding: 0;
 	width: 100%;
-	word-break: keep-all;
+
 }
 
 thead {
@@ -199,4 +199,46 @@ table tr td {
 
 table tr:nth-child(2n) {
 	background-color: #F8F8F8;
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: normal;
+	font-weight: normal;
+	src: local('JetBrainsMono'), url('file:///android_asset/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: italic;
+	font-weight: normal;
+	src: local('JetBrainsMono'), url('file:///android_asset/fonts/JetBrainsMono-Italic.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: normal;
+	font-weight: bold;
+	src: local('JetBrainsMono'), url('file:///android_asset/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: italic;
+	font-weight: bold;
+	src: local('JetBrainsMono'), url('file:///android_asset/fonts/JetBrainsMono-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: normal;
+	font-weight: bolder;
+	src: local('JetBrainsMono'), url('file:///android_asset/fonts/JetBrainsMono-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: italic;
+	font-weight: bolder;
+	src: local('JetBrainsMono'), url('file:///android_asset/fonts/JetBrainsMono-ExtraBoldItalic.woff2') format('woff2');
 }

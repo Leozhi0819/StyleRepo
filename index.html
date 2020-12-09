@@ -2,7 +2,12 @@
 <head>
 <meta charset="utf-8">
 <title></title>
-  <link rel="stylesheet" href="epsilon/daystyle.css"> 
+    <link rel="stylesheet" href="epsilon/daystyle.css">
+    <script src="epsilon/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="epsilon/myjs.js"></script>
+    <script>
+        alert("test");
+    </script>
 </head> 
 <body>
 <h1 id="epsilon-notes-markdown语法">Epsilon Notes Markdown语法</h1>
@@ -414,7 +419,6 @@ public class HelloWorld {
 </tbody>
 </table>
 <p><span id="table-test">自定义锚点测试</span></p>
-<div class="table_container" style="width:100%; overflow:scroll;">
 <table>
 <thead>
 <tr><th align="left">左对齐</th><th align="right">右对齐</th><th align="center">居中对齐</th></tr>
@@ -424,7 +428,6 @@ public class HelloWorld {
 <tr><td align="left">单元格</td><td align="right">单元格</td><td align="center">单元格</td></tr>
 </tbody>
 </table>
-</div>
 <h2 id="markdown目录">Markdown目录</h2>
 <h6 id="语法格式-25">语法格式</h6>
 <pre><code class="language-markdown">[TOC]
@@ -750,6 +753,9 @@ public class HelloWorld {
 <p><a href="#1" name="1-return"><sup>1</sup></a>: ：这是注解部分，要使用英文冒号，且冒号与内容以空格隔开</p>
 <script type="text/javascript" async
 	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/javascript">
+    $("table").wrap('<div class="table_container" style="width:100%; overflow:scroll;" />');
 </script>
 <script type="text/x-mathjax-config">
 	MathJax.Hub.Config({
