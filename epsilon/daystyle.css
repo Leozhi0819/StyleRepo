@@ -171,8 +171,11 @@ pre code {
 table {
 	border: 1px solid #DDDDDD;
 	border-collapse: collapse;
+	margin-bottom: 20px;
+	overflow: auto;
 	padding: 0;
 	width: 100%;
+	word-break: keep-all;
 }
 
 thead {
@@ -182,6 +185,16 @@ thead {
 table tr {
 	border: 1px solid #DDDDDD;
 	margin: 0;
+}
+
+table tr th {
+	border: 1px solid #DFE2E5;
+	padding:  6px 13px;
+}
+
+table tr td {
+	border: 1px solid #DFE2E5;
+	padding:  6px 13px;
 }
 
 table tr:nth-child(2n) {
