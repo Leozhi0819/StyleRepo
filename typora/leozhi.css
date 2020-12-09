@@ -1,0 +1,328 @@
+:root {
+	/* 编辑区背景颜色 、文本颜色 、选中文本高亮颜色、字体颜色*/
+	--bg-color: #1E1E1E;
+	--text-color: #969696;
+	--select-text-bg-color: #3E4DD5;
+	--select-text-font-color: white;
+	/* 侧边栏背景颜色、文本颜色、文本悬停颜色、搜索框文本选中颜色、搜索框边框颜色*/
+	--side-bar-bg-color: #2E3033;
+	--control-text-color: #969696;
+	--control-text-hover-color: #EEEEEE;
+	--search-select-bg-color: #3E4DD5;
+	--primary-color: #3E4DD5;
+	/* 选中项边框颜色、背景颜色、文本颜色*/
+	--active-file-border-color: #3E4DD5;
+    --active-file-bg-color: #B7B7B7;
+    --active-file-text-color: #2E3033;
+    /* 侧边栏底部工具栏 分割线 、悬停文本颜色、背景颜色 */
+    --window-border: 0 solid #F6F6F6;
+    --item-hover-text-color: #333333;
+    --item-hover-bg-color: #F6F6F6;
+    --rawblock-edit-panel-bd: #00FF00;
+}
+
+/* 全局字体 */
+html {
+	font-family: JetBrainsMono;
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+/* 全局行高 */
+html, body {
+	line-height: 1.5em;
+}
+
+/* 编辑器宽度 */
+#write {
+	max-width: 900px;
+}
+
+/* Markdown样式 */
+
+/* 标题 */
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	-ms-word-wrap: break-word;
+	margin: 0;
+	padding: 0;
+    word-wrap: break-word;
+}
+
+h1 {
+	font-size: 2.25rem;
+	letter-spacing: -1.5px;
+	line-height: 2.75rem;
+	margin-bottom: 1.5rem;
+}
+
+h2 {
+	font-size: 1.75rem;
+	letter-spacing: -1px;
+	line-height: 1.75rem;
+	margin-bottom: 1.5rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	letter-spacing: -1px;
+	line-height: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+	letter-spacing: -1px;
+	line-height: 1.25rem;
+	margin-bottom: 1.5rem;
+}
+
+h5 {
+	font-size: 1rem;
+	letter-spacing: -1px;
+	line-height: 1.25rem;
+	margin-bottom: 1.5rem;
+}
+
+h6 {
+	color: #646464;
+	font-size: 1rem;
+	letter-spacing: -1px;
+	line-height: 1rem;
+	margin-bottom: 0.75rem;
+}
+
+/* 段落 */
+p {
+	-ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* 分割线 */
+hr {
+	background-color: #DEDEDE;
+	border: 0;
+	height: 2px;
+    margin: 24px 0 !important;
+}
+
+/* 列表 */
+ul, ol {
+	padding: 0 0 0 1.75rem;
+}
+
+ul {
+	list-style: square;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+	margin: 0;
+}
+
+li > blockquote {
+	margin-bottom: 0;
+}
+
+/* 引用 */
+blockquote {
+	background-color: #464646;
+	border-left: solid 4px #FF0000;
+	margin-block-end: 0;
+	margin-block-start: 0;
+	margin-bottom: 1.75rem;
+	padding-left: 15px;
+}
+
+blockquote > p {
+	line-height: 3rem;
+	margin-block-end: 0;
+	margin-block-start: 0;
+}
+
+/* 行内代码块 */
+code {
+	background-color: #464646;
+	border: solid 1px #DDDDDD;
+	border-radius: 4px;
+	bottom: 1px;
+	color: #C7254E;
+	font-size: .75rem;
+	line-height: 16px;
+	margin: 0 4px;
+	padding: 3px 4px 1px 4px;
+	position: relative;
+
+}
+
+/* 代码块 */
+
+pre {
+	--select-text-bg-color: #36284e;
+	--select-text-font-color: #fff;
+}
+
+pre.md-fences {
+	background-color:  #2D2D2D;
+	border-radius: 10px;
+	color: #A9B7C6;
+	font-size: .8em;
+	padding: 10px 10px 10px 30px;
+}
+
+/* 代码 */
+.CodeMirror-code {
+	font-family: JetBrainsMono;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+/* 标题 */
+.cm-s-inner .cm-header, .cm-s-inner.cm-header {
+	color: #A9B7C6;
+}
+
+/* 分割线 */
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr {
+	color: #A9B7C6;
+}
+
+/* 标签 */
+.cm-s-inner .cm-tag {
+	color: #A9B7C6;
+}
+
+/* 属性 */
+.cm-s-inner .cm-attribute {
+	color: #A9B7C6;
+}
+
+/* 关键字 */
+.cm-s-inner .cm-keyword {
+    color: #CC7832;
+}
+
+/* 类名 */
+.cm-s-inner .cm-def {
+    color: #A9B7C6;
+}
+/* 变量名、方法名 */
+.cm-s-inner .cm-variable {
+    color: #A9B7C6;
+}
+.cm-s-inner .cm-variable-2 {
+	color: #CC7832;
+}
+/* 变量类型 */
+.cm-s-inner .cm-variable-3 {
+    color: #CC7832;
+}
+/* 字符串 */
+.cm-s-inner .cm-string {
+    color: #6A8759;
+}
+/* 数值 */
+.cm-s-inner .cm-number {
+    color: #6897BB;
+}
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom {
+	color: #CC7832;
+}
+.cm-atom, .cm-atom .cm-number {
+	color: #6897BB;
+}
+.cm-block-start.cm-number {
+	color: #6897BB;
+}
+/* 操作符 */
+.cm-s-inner .cm-operator {
+    color: #A9B7C6;
+}
+/* 注释 */
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment {
+    color: #629755;
+}
+/* 链接 */
+.cm-s-inner .cm-link, .cm-s-inner.cm-link {
+    color: #6699CC;
+    font-weight: 700;
+    text-decoration: none;
+}
+/* > * */
+.cm-em {
+    font-style: normal;
+}
+
+/* 注解 */
+.cm-s-inner .cm-meta {
+	color: #BBB529;
+}
+
+/* 行号 */
+.CodeMirror-linenumber {
+	font-size: 0.75rem;
+	padding: 0 0 0 10px;
+}
+
+.CodeMirror-gutters {
+	border: none;
+}
+
+.CodeMirror pre {
+	padding: 0 10px;
+}
+
+/* 语言选择器 */
+.code-tooltip {
+	background-color: #2D2D2D;
+	font-family: JetBrainsMono;
+	font-size: .75rem;
+	font-weight: bold; 
+	color: #969696;
+}
+
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: normal;
+	font-weight: normal;
+	src: local('JetBrainsMono'), url('./leozhi/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: italic;
+	font-weight: normal;
+	src: local('JetBrainsMono'), url('./leozhi/JetBrainsMono-Italic.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: normal;
+	font-weight: bold;
+	src: local('JetBrainsMono'), url('./leozhi/JetBrainsMono-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: italic;
+	font-weight: bold;
+	src: local('JetBrainsMono'), url('./leozhi/JetBrainsMono-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: normal;
+	font-weight: bolder;
+	src: local('JetBrainsMono'), url('./leozhi/JetBrainsMono-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'JetBrainsMono';
+	font-style: italic;
+	font-weight: bolder;
+	src: local('JetBrainsMono'), url('./leozhi/JetBrainsMono-ExtraBoldItalic.woff2') format('woff2');
+}

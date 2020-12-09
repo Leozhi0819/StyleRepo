@@ -1,42 +1,172 @@
 *, *:before, *:after {
+	border: 0;
 	box-sizing: border-box;
 	font-style: normal;
     list-style: none;
 	margin: 0;
 	padding: 0;
+	vertical-align: baseline;
 }
 
+body {
+	color: #313131;
+	line-height: 1.5;
+	padding: 0 18px;
+}
+
+/* 标题 */
 h1, h2, h3, h4, h5, h6 {
-	color:121212
+	color: #121212;
+	line-height: 1.9;
+	margin: 0 0 15px;
 }
 
 h1 {
-	font-size:2rem;
-	font-weight:900;
+	font-size: 2rem;
+	font-weight: 900;
 }
 
 h2 {
-	font-size:1.8rem;
-	font-weight:800;
+	font-size: 1.8rem;
+	font-weight: 800;
 }
 
 h3 {
-	font-size:1.6rem;
-	font-weight:700;
+	font-size: 1.6rem;
+	font-weight: 700;
 }
 
 h4 {
-	font-size:1.4rem;
-	font-weight:700;
+	font-size: 1.4rem;
+	font-weight: 700;
 }
 
 h5 {
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+h6 {
+	color:#5A5A5A;
 	font-size:1.2rem;
 	font-weight:700;
 }
 
-h6 {
-	font-size:1.2rem;
-	font-weight:700;
-	color:#5A5A5A;
+/* 段落 */
+p {
+	font-weight: 300;
+	margin-bottom: 15px;
+}
+
+/* 列表 */
+ul, ol, dl {
+	margin: 0 0 20px 20px;
+}
+
+ul li {
+	list-style: disc outside;
+}
+
+ul li ul li {
+	list-style-type: circle;
+}
+
+ul li ul li ul li {
+	list-style-type: square;
+}
+
+ol li {
+	list-style: decimal outside;
+}
+
+ol ul li {
+	list-style: disc outside;
+}
+
+dl dt {
+	color: #303030;
+}
+
+/* 超链接 */
+a {
+	color: #1EAEDB;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* 引用 */
+blockquote {
+	background-color: #F7F7F7;
+	border-left: 4px solid #C7254E;
+	margin-bottom: 20px;
+	padding: 0 0 0 20px;
+}
+
+blockquote > p {
+	line-height: 3em;
+	margin-bottom: 0;
+}
+
+blockquote ul, blockquote ol {
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+
+/* 行内代码块 */
+code {
+	background-color: #F2F2F2;
+	border: solid 1px #DDDDDD;
+	border-radius: 4px;
+	bottom: 1px;
+	color: #C7254E;
+	font-size: .75rem;
+	line-height: 16px;
+	margin: 0 4px;
+	padding: 3px 4px 1px 4px;
+	position: relative;
+}
+
+/* 代码块 */
+pre {
+	background-color: #2D2D2D;
+	border: 1px solid #CCCCCC;
+	border-radius: 6px;
+	color: #F2F2F2;
+	margin-bottom: 20px;
+	overflow: auto;
+	padding: 5px 15px;
+	text-shadow: none;
+}
+
+pre code {
+	background-color: #303030;
+	border: none;
+	bottom: 0;
+	color: #F2F2F2;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+/* 表格 */
+table {
+	border: 1px solid #DDDDDD;
+	border-collapse: collapse;
+	padding: 0;
+	width: 100%;
+}
+
+thead {
+	background-color: #BBBBBB;
+}
+
+table tr {
+	border: 1px solid #DDDDDD;
+	margin: 0;
+}
+
+table tr:nth-child(2n) {
+	background-color: #F8F8F8;
 }
