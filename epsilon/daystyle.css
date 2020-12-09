@@ -87,6 +87,18 @@ dl dt {
 	color: #303030;
 }
 
+/* 上标 */
+sup {
+	font-size: smaller;
+	vertical-align: super;
+}
+
+/* 下标 */
+sub {
+	font-size: smaller;
+	vertical-align: sub;
+}
+
 /* 超链接 */
 a {
 	color: #1EAEDB;
@@ -94,6 +106,11 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+
+/* 图片 */
+img {
+	width: 100%;
 }
 
 /* 引用 */
